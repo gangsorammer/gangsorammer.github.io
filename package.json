@@ -1,0 +1,11 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.5",
+    "tailwindcss": "^4.1.5",
+    "vite": "^6.3.4"
+  },
+  "scripts": {
+    "build": "vite build"
+  }
+}
