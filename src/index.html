@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="/src/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <title>Gangsø Rammer</title>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none"> <symbol id="check2" viewBox="0 0 16 16"> <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path> </symbol> <symbol id="circle-half" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path> </symbol> <symbol id="moon-stars-fill" viewBox="0 0 16 16"> <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path> <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path> </symbol> <symbol id="sun-fill" viewBox="0 0 16 16"> <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path> </symbol> </svg> <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"> <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)"> <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg> <span class="visually-hidden" id="bd-theme-text">Toggle theme</span> </button> <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text"> <li> <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false"> <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+    Light
+    <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg> </button> </li> <li> <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false"> <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+    Dark
+    <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg> </button> </li> <li> <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true"> <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+    Auto
+    <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg> </button> </li> </ul> </div>  <main> <div class="container py-4"> <header class="pb-3 mb-4 border-bottom"> <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg> <span class="fs-4">Jumbotron example</span> </a> </header> <div class="p-5 mb-4 bg-body-tertiary rounded-3"> <div class="container-fluid py-5"> <h1 class="display-5 fw-bold">Custom jumbotron</h1> <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p> <button class="btn btn-primary btn-lg" type="button">Example button</button> </div> </div> <div class="row align-items-md-stretch"> <div class="col-md-6"> <div class="h-100 p-5 text-bg-dark rounded-3"> <h2>Change the background</h2> <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p> <button class="btn btn-outline-light" type="button">Example button</button> </div> </div> <div class="col-md-6"> <div class="h-100 p-5 bg-body-tertiary border rounded-3"> <h2>Add borders</h2> <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p> <button class="btn btn-outline-secondary" type="button">Example button</button> </div> </div> </div> <footer class="pt-3 mt-4 text-body-secondary border-top">
+    &copy; 2025 </footer> </div> </main>
+
+    <div class="wrapper">
+        <div class="header flex border-double border-b-4 items-center">
+            <div class="grow">
+                <div class="p-2 font-serif text-[24px] font-bold">Gangsø Rammer</div>
+            </div>
+            <div class="flex-none"><a class="p-2 font-bold" href="tel:+4790741117">+47 907 41 117</a></div>
+        </div>
+
+        <div class="hero text-center p-5 pb-10 pt-10 sm:p-20">
+            <h1 class="sm:text-[80px] font-serif font-normal leading-none text-[60px]">Din lokale<br>rammebedrift</h1>
+        </div>
+
+        <div class="flex gap-3 text-nowrap bg-white p-2 ">
+            <span>Passepartout</span>
+            <span>innramming</span>
+            <span>blindrammer og oppstrekk</span>
+            <span>laminering</span>
+        </div>
+
+        <div class="flex justify-center">
+            <ul class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-start space-x-4 sm:space-x-8 sm:space-y-0 gap-10">
+                <!-- First Item (Phone) -->
+                <li class="flex items-start justify-center sm:justify-start">
+                    <svg class="w-5 h-5 mt-1 mr-3" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/>
+                    </svg>
+                    <span>
+                    <span class="font-medium">Telefon</span><br/>
+                    <a class="text-sm text-gray-600" href="tel:+4790741117">+47 907 41 117</a>
+                </span>
+                </li>
+
+                <!-- Second Item (Email) -->
+                <li class="flex items-start justify-center sm:justify-start">
+                    <svg class="w-5 h-5 mt-1 mr-3" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256l0 32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32l0 80 0 32c0 17.7 14.3 32 32 32s32-14.3 32-32l0-32c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+                    </svg>
+                    <div>
+                        <div class="font-medium">E-post</div>
+                        <a class="text-sm text-gray-600" href="mailto:arild@gangsorammer.no">arild@gangsorammer.no</a>
+                    </div>
+                </li>
+
+                <!-- Third Item (Location) -->
+                <li class="flex items-start justify-center sm:justify-start sm:col-span-1">
+              <span class="mt-1 mr-3 text-gray-500">
+                <svg class="w-5 h-5" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M384 476.1L192 421.2l0-385.3L384 90.8l0 385.3zm32-1.2l0-386.5L543.1 37.5c15.8-6.3 32.9 5.3 32.9 22.3l0 334.8c0 9.8-6 18.6-15.1 22.3L416 474.8zM15.1 95.1L160 37.2l0 386.5L32.9 474.5C17.1 480.8 0 469.2 0 452.2L0 117.4c0-9.8 6-18.6 15.1-22.3z"/>
+                </svg>
+              </span>
+                    <span>
+                <span class="font-medium">Besøksadresse</span><br/>
+                <a class="text-sm text-gray-600" href="https://maps.app.goo.gl/ZytgBkXrWUFR4vEv6">
+                  Feenveien 116<br/>
+                  3160 Stokke<br/>
+                </a>
+              </span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="m-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 features">
+                <div class="text-center sm:text-left p-4 pt-0">
+                    <h2 class="text-[2rem] font-bold font-serif">Passepartout</h2>
+                    <p class="text-base">
+                        Passepartout skaper et visuelt skille mellom bildet og rammen. Den er skråskåret for å
+                        unngå skarpe skygger, og det leder blikket inn i bildet.
+                        Farget passepartout fremhever detaljer i bildet, og det er ofte fint i kombinasjon av
+                        hvit/offwhite.
+                        Det er nesten ingen begrensninger på hvor mange passepartoutlag man kan ha. Det gir en
+                        trappetrinns effekt som fremhever bilde.
+                    </p>
+                </div>
+
+                <div class="text-center sm:text-left p-4 pt-0">
+                    <h2 class="text-[2rem] font-bold font-serif">Laminering</h2>
+                    <p class="text-base">
+                        Laminering er en plastfolie limt til bildet, oftest limt på en plate.
+                        Innbaking er plastfolie lagt på begge sider, bildet blir da vanntett.
+                        Velegnet til sjøkart, bygningstegninger, oppslag som kan bli utsatt for fuktighet.
+                        Vi laminerer foto, kart, tegninger o.l.
+                        Klebing på alle type plater som kapa, mdf, stålplater, m.m.
+                    </p>
+                </div>
+
+                <div class="text-center sm:text-left p-4 pt-0">
+                    <h2 class="text-[2rem] font-bold font-serif">Innramming</h2>
+                    <p class="text-base">
+                        Vi rammer inn alt du måtte ønske. Vi har rammet inn dåpskjoler, sko, melkekartong, sølvtøy,
+                        sykkeldrev, skiftenøkkel, mobiltelefon, kniver, dirigentstav – ja, alt du kan tenke deg.
+                        Nedenfor kan du se noen bilder av gjenstandene.
+                    </p>
+                </div>
+
+                <div class="text-center sm:text-left p-4 pt-0">
+                    <h2 class="text-[2rem] font-bold font-serif">Oppstrekk</h2>
+                    <p class="text-base">
+                        Vi strekker opp lerret i alle størrelser, med forskjellige type blindrammer etter bildets
+                        størrelse.
+
+                        Broderioppstrekk er min spesialitet. Alle typer broderi og garn er mulig.
+                        Vi kan også rense broderiet før oppstrekk og innramming.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-5 pb-10 pt-10 sm:pl-20 sm:pr-20">
+            <h1 class="sm:text-[5rem] font-serif font-bold italic">48 år erfaring</h1>
+            <p class="text-[16px] mt-5 text-[#555]"></p>
+        </div>
+    </div>
+
+</body>
+</html>
