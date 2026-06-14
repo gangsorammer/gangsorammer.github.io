@@ -237,7 +237,6 @@ h1, h2, h3 {
   width: 100%;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 .feature-text h3 {
